@@ -1,0 +1,43 @@
+[package]
+name = "fan2jian"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+authors = ["Jorge Andre Castro"]
+description = "Convertisseur ultra-rapide chinois traditionnel (繁体) vers chinois simplifié (简体), sans aucune dépendance."
+license = "GPL-2.0-or-later"
+repository = "https://github.com/jorgeandrecastro/fan2jian"
+readme = "README.md"
+keywords = ["chinese", "traditional", "simplified", "converter", "opencc"]
+categories = ["text-processing", "localization", "algorithms"]
+build = "build.rs"
+include = [
+    "src/**/*",
+    "examples/**/*",
+    "tests/**/*",
+    "data/*",
+    "build.rs",
+    "Cargo.toml",
+    "README.md",
+    "NOTICE",
+]
+
+[lib]
+name = "fan2jian"
+path = "src/lib.rs"
+
+[[bin]]
+name = "f2j"
+path = "src/bin/f2j.rs"
+
+[[example]]
+name = "basic"
+path = "examples/basic.rs"
+
+[dependencies]
+# Aucune dépendance externe : tables générées à la compilation par build.rs (std uniquement).
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1

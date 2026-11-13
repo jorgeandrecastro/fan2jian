@@ -1,0 +1,10 @@
+fan2jian embarque des dictionnaires issus du projet Open Chinese Convert (OpenCC) :
+
+  data/TSCharacters.txt
+  data/TSPhrases.txt
+
+Source    : https://github.com/BYVoid/OpenCC
+Licence   : Apache License 2.0 (https://www.apache.org/licenses/LICENSE-2.0)
+Copyright : les contributeurs d'OpenCC
+
+Ces fichiers sont redistribués avec leur licence d'origine.

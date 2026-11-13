@@ -1,0 +1,3 @@
+# fan2jian — expressions complémentaires (priment sur TSPhrases.txt en cas de doublon).
+# Format : clé<TAB>valeur   (la clé doit faire au moins 2 caractères)
+企畫	企划
